@@ -19,7 +19,8 @@ class LOADER():
             fileName,
             sep='   ',
             skiprows=38,
-            engine='python'
+            engine='python',
+            header=None
         )
         self._fileName = fileName.split('/')[-1].split('.')[0]
         self._data.columns = ['energy', 'norma', 'l2', 's2', 'q', 'r', 'm']
